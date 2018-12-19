@@ -1,0 +1,71 @@
+#bola--vermelha{
+	width: 100px;
+	height: 100px;
+	border-radius: 600px;
+	background: red;
+	position: relative;
+
+	animation-name: movimento; /* aqui eu dou o nome da animação */
+	animation-duration: 3s; /* tempo de duração da animação */
+	animation-iteration-count: infinite; /* contagem de iteração */
+	animation-timing-function: linear; /* função de tempo da animação */
+	animation-direction: normal; /* direção da animação */
+}
+#bola--verde{
+	width: 100px;
+	height: 100px;
+	border-radius: 600px;
+	background: red;
+	position: relative;
+
+	animation-name: movimento; /* aqui eu dou o nome da animação */
+	animation-duration: 3s; /* tempo de duração da animação */
+	animation-iteration-count: infinite; /* contagem de iteração */
+	animation-timing-function: linear; /* função de tempo da animação */
+	animation-direction: normal; /* direção da animação */
+	animation-delay: .25s;
+}
+#bola--azul{
+	width: 100px;
+	height: 100px;
+	border-radius: 600px;
+	background: red;
+	position: relative;
+
+	animation-name: movimento; /* aqui eu dou o nome da animação */
+	animation-duration: 3s; /* tempo de duração da animação */
+	animation-iteration-count: infinite; /* contagem de iteração */
+	animation-timing-function: linear; /* função de tempo da animação */
+	animation-direction: normal; /* direção da animação */
+	animation-delay: .5s;
+}
+
+@keyframes movimento{
+	0%{ /* ponto inicial da animação */
+		left: 0px;
+		top: 0px;
+		background-color: red;
+	 }
+	 25%{left: 500px;
+	 	top: 500px;
+	 	background-color: green;
+	 }
+
+	 50% {
+	 	left: 500px;
+	 	top: 0px;
+	 	background-color: blue;
+	 }
+
+	 75%{
+	 	left: 0px;
+	 	top: 500px;
+	 	background-color: yellow;
+	 }
+
+	 100%{ /* ponto final da animação */
+	 	left: 0px; 
+	 	top: 0px;
+	 	background-color: pink;
+	 }
+}
