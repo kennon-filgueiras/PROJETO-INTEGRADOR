@@ -1,71 +1,50 @@
-#bola--vermelha{
-	width: 100px;
-	height: 100px;
-	border-radius: 600px;
-	background: red;
+.bolinha{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
 	position: relative;
 
-	animation-name: movimento; /* aqui eu dou o nome da animação */
-	animation-duration: 3s; /* tempo de duração da animação */
+	animation-name: bolinhas; /* aqui eu dou o nome da animação */
+	animation-duration: 2s; /* tempo de duração da animação */
 	animation-iteration-count: infinite; /* contagem de iteração */
 	animation-timing-function: linear; /* função de tempo da animação */
-	animation-direction: normal; /* direção da animação */
 }
-#bola--verde{
-	width: 100px;
-	height: 100px;
-	border-radius: 600px;
-	background: red;
-	position: relative;
-
-	animation-name: movimento; /* aqui eu dou o nome da animação */
-	animation-duration: 3s; /* tempo de duração da animação */
-	animation-iteration-count: infinite; /* contagem de iteração */
-	animation-timing-function: linear; /* função de tempo da animação */
-	animation-direction: normal; /* direção da animação */
-	animation-delay: .25s;
+.bolinha1 {
+	background-color: red
 }
-#bola--azul{
-	width: 100px;
-	height: 100px;
-	border-radius: 600px;
-	background: red;
-	position: relative;
-
-	animation-name: movimento; /* aqui eu dou o nome da animação */
-	animation-duration: 3s; /* tempo de duração da animação */
-	animation-iteration-count: infinite; /* contagem de iteração */
-	animation-timing-function: linear; /* função de tempo da animação */
-	animation-direction: normal; /* direção da animação */
-	animation-delay: .5s;
+.bolinha2{
+	transform: translateY(-20px);
+	animation-delay: 0.2s;
+	background-color: black;
+}
+.bolinha3{
+	transform: translateY(-40px);
+	animation-delay: 0.4s;
+	background-color: blue;
 }
 
-@keyframes movimento{
+@keyframes bolinhas{
 	0%{ /* ponto inicial da animação */
 		left: 0px;
 		top: 0px;
-		background-color: red;
 	 }
-	 25%{left: 500px;
-	 	top: 500px;
-	 	background-color: green;
+	 25%{left: 200px;
+	 	top: 200px;
 	 }
 
 	 50% {
-	 	left: 500px;
+	 	left: 200px;
 	 	top: 0px;
-	 	background-color: blue;
+	 	filter: hue-rotate(360deg);
 	 }
 
 	 75%{
 	 	left: 0px;
-	 	top: 500px;
-	 	background-color: yellow;
+	 	top: 200px;
 	 }
 
 	 100%{ /* ponto final da animação */
 	 	left: 0px; 
 	 	top: 0px;
-	 	background-color: pink;
 	 }
 }
