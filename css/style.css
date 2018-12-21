@@ -1,50 +1,17 @@
-.bolinha{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	position: relative;
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Lalezar|Shrikhand|Yellowtail');
 
-	animation-name: bolinhas; /* aqui eu dou o nome da animação */
-	animation-duration: 2s; /* tempo de duração da animação */
-	animation-iteration-count: infinite; /* contagem de iteração */
-	animation-timing-function: linear; /* função de tempo da animação */
-}
-.bolinha1 {
-	background-color: red
-}
-.bolinha2{
-	transform: translateY(-20px);
-	animation-delay: 0.2s;
-	background-color: black;
-}
-.bolinha3{
-	transform: translateY(-40px);
-	animation-delay: 0.4s;
-	background-color: blue;
+body{
+font-family: 'Lalezar', cursive;
+font-family: 'Yellowtail', cursive;
+font-family: 'Alex Brush', cursive;
+font-family: 'Shrikhand', cursive;
+background-color: blue !important;
 }
 
-@keyframes bolinhas{
-	0%{ /* ponto inicial da animação */
-		left: 0px;
-		top: 0px;
-	 }
-	 25%{left: 200px;
-	 	top: 200px;
-	 }
+.jumbotron{
+		border-radius: 0px !important;
+}
 
-	 50% {
-	 	left: 200px;
-	 	top: 0px;
-	 	filter: hue-rotate(360deg);
-	 }
-
-	 75%{
-	 	left: 0px;
-	 	top: 200px;
-	 }
-
-	 100%{ /* ponto final da animação */
-	 	left: 0px; 
-	 	top: 0px;
-	 }
+.fundo--tomato{
+		background-color: #00cde1 !important;
 }
